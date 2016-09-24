@@ -1,0 +1,98 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: dimgray;
+}
+
+.hero-container {
+  position: relative;
+  background-color: red;
+  min-height: 33vw;
+  width: 100%;
+}
+
+.hero-image {
+  background: url('https://scontent.xx.fbcdn.net/t31.0-8/11021355_898653110155763_923150969851337795_o.jpg') white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.round-logo{
+   width: 100px;
+   height: 100px;
+   background-image: url('http://0.gravatar.com/blavatar/23dab5654d7b6265b2b54872d679d188?s=200&ts=1434179937');
+   background-size: cover;
+   display: inline-block;
+   border-radius: 50px;
+   -webkit-border-radius: 50px;
+   -moz-border-radius: 50px;
+   position: absolute;
+   left: 200px;
+   bottom: -50px;
+ }
+
+
+
+.sidebar {
+  width: 25%;
+}
+
+.sidebar-contents {
+  list-style: none;
+}
+
+ .main-content-container {
+   display: inline-block;
+   width: 75%;
+   margin: auto;
+ }
+
+ h1 {
+   font-size: 24px;
+ }
+
+.byline{
+  font-style: italic;
+}
+
+.byline a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*.blog-image {
+  background-image: url('https://farm3.staticflickr.com/2941/15105612447_bc50a673f7.jpg');
+  background-size: cover;
+  width: 100%;
+}*/
+
+footer {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: solid 1px lightgray;
+  margin: 0 15px 15px 0;
+}
+
+.square-logo {
+  width: 30px;
+  height: 30px;
+  background-image: url('http://0.gravatar.com/blavatar/23dab5654d7b6265b2b54872d679d188?s=200&ts=1434179937');
+  background-size: cover;
+}
+
+.follow-button {
+  background: blue;
+  color: white;
+}
