@@ -1,98 +1,163 @@
+/*General settings*/
+
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: sans-serif;
-  font-weight: lighter;
-  color: dimgray;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: dimgray;
+    font-size: 1.2em;
 }
 
+/*hero section*/
+
 .hero-container {
-  position: relative;
-  background-color: red;
-  min-height: 33vw;
-  width: 100%;
+    position: relative;
+    min-height: 33vw;
+    width: 100%;
 }
 
 .hero-image {
-  background: url('https://scontent.xx.fbcdn.net/t31.0-8/11021355_898653110155763_923150969851337795_o.jpg') white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+    background: url('https://scontent.xx.fbcdn.net/t31.0-8/11021355_898653110155763_923150969851337795_o.jpg') white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
-.round-logo{
-   width: 100px;
-   height: 100px;
-   background-image: url('http://0.gravatar.com/blavatar/23dab5654d7b6265b2b54872d679d188?s=200&ts=1434179937');
-   background-size: cover;
-   display: inline-block;
-   border-radius: 50px;
-   -webkit-border-radius: 50px;
-   -moz-border-radius: 50px;
-   position: absolute;
-   left: 200px;
-   bottom: -50px;
- }
+.round-logo {
+    border: solid 7px white;
+    width: 150px;
+    height: 150px;
+    background-image: url('http://0.gravatar.com/blavatar/23dab5654d7b6265b2b54872d679d188?s=200&ts=1434179937');
+    background-size: cover;
+    display: inline-block;
+    border-radius: 75px;
+    -webkit-border-radius: 75px;
+    -moz-border-radius: 75px;
+    position: absolute;
+    left: 200px;
+    bottom: -75px;
+}
 
 
+/*main content section*/
+
+.main-content-container {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 75%;
+    height: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+}
 
 .sidebar {
-  width: 25%;
+    width: 25%;
+    float: left;
+    position: absolute;
+    padding-right: 7%;
 }
 
 .sidebar-contents {
-  list-style: none;
+    list-style: none;
+    padding: 0;
+    opacity: .7;
 }
 
- .main-content-container {
-   display: inline-block;
-   width: 75%;
-   margin: auto;
- }
+.sidebar-text p {
+    margin: 0;
+    padding-bottom: 20px;
+}
 
- h1 {
-   font-size: 24px;
- }
+.sidebar-search h4 {
+    padding: 20px 0;
+    display: block;
+    opacity: .55;
+}
 
-.byline{
-  font-style: italic;
+.middle-container {
+    width: 75%;
+    float: left;
+    left: 25%;
+    position: absolute;
+}
+
+.headline h1 {
+    font-size: 3.1em;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.byline {
+    font-style: italic;
+}
+
+.byline-content {
+    line-height: 60px;
+    vertical-align: center;
 }
 
 .byline a {
-  text-decoration: none;
-  font-weight: bold;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/*.blog-image {
-  background-image: url('https://farm3.staticflickr.com/2941/15105612447_bc50a673f7.jpg');
-  background-size: cover;
-  width: 100%;
-}*/
+.blog-image {
+    background-image: url('https://farm3.staticflickr.com/2941/15105612447_bc50a673f7.jpg');
+    background-size: cover;
+    width: 75%;
+    height: 230px;
+}
+
+/*fixed box with twitter follow section*/
 
 footer {
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border: solid 1px lightgray;
-  margin: 0 15px 15px 0;
+    display: inline-block;
+    position: fixed;
+    /*height: 80px;*/
+    width: 250px;
+    bottom: 0;
+    right: 0;
+    border-left: solid 2px lightgray;
+    border-bottom: solid 2px lightgray;
+    margin: 0 10px 10px 0;
+}
+
+footer h5 {
+    margin: 0;
+}
+
+.never-miss {
+    border-top: solid 1px lightgray;
+    border-bottom: solid 1px lightgray;
+    padding: 15px 10px;
 }
 
 .square-logo {
-  width: 30px;
-  height: 30px;
-  background-image: url('http://0.gravatar.com/blavatar/23dab5654d7b6265b2b54872d679d188?s=200&ts=1434179937');
-  background-size: cover;
+    width: 30px;
+    height: 30px;
+    background-image: url('http://0.gravatar.com/blavatar/23dab5654d7b6265b2b54872d679d188?s=200&ts=1434179937');
+    background-size: cover;
+    float: left;
+    margin: 10px;
+}
+
+.tiy-text-container {
+    float: left;
+    top: 0;
 }
 
 .follow-button {
-  background: blue;
-  color: white;
+    background: blue;
+    color: white;
+    float: left;
 }
